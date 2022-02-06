@@ -9,7 +9,11 @@ console.log(jsbook['price']);
 // stockプロパティのデータを書き換え
 jsbook.stock = 10;
 console.log(jsbook.stock);
-*/
+// オブジェクトの全てのプロパティを読み取る
 for(let p in jsbook) {
   console.log(p + '=' + jsbook[p]);
 }
+*/
+document.getElementById('title').textContent = jsbook.title;
+document.getElementById('price').textContent = jsbook.price + '円';
+document.getElementById('stock').textContent = jsbook.stock;
